@@ -1,0 +1,534 @@
+body{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/GemLayout1/assets/asset42.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+
+.header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 20px;
+
+}
+
+
+
+.logo_box img{
+    width: 100%;
+}
+
+.burger_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+
+
+.b_line{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    border-radius: 3px;
+    transition: .6s ease-in-out;
+    position: absolute;
+    
+    
+
+}
+
+
+.line1{
+    margin-bottom: 5px;
+}
+
+.line2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.line3{
+    margin-top: 5px;
+}
+
+.line1_active{
+    transform: rotate(45deg);
+    margin-top: 5px;
+}
+
+.line2_active{
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.line3_active{
+    transform: rotate(-45deg);
+    margin-bottom: 5px;
+}
+
+.sidenav{
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: .6s ease-in-out;
+}
+
+.sidenav_active{
+    width: 300px;
+    right: 0;
+    background-color: white;
+
+}
+
+.burger_menu_active{
+    margin-right: 300px;
+}
+
+.side_menu{
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 50px;
+
+}
+
+.side_menu li{
+    padding-bottom: 15px;
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.side_menu li:hover{
+    color: rgb(76, 76, 213);
+}
+
+
+.hero_content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+
+.hero_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.scene{
+    pointer-events: all;
+}
+
+
+
+.title{
+    font-size: 70px;
+    color: white;
+    font-weight: 300;
+}
+
+.second_word{
+    font-weight: 600;
+}
+
+.button_group{
+    display: flex; 
+    width: 40%;
+    margin: 0 auto;   
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+.button1{
+    border: 1px solid white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 300;
+    font-size: 11px;
+    transition: .2s ease-in-out;
+    margin-right: 10px;
+    
+}
+
+.button1:hover{
+    background-color: white;
+    color: black;
+}
+
+ .button2{
+    border: 1px solid rgb(0, 188, 212);
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    color: rgb(0, 188, 212);
+    font-size: 11px;
+    transition: .2s ease-in-out;
+    margin-left: 10px;
+}
+
+.button2:hover{
+    background-color:rgb(0, 188, 212);
+    color: black; 
+}
+
+
+.second_title{
+    color: white;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.icon{
+    position: absolute;
+    top: -600px;
+    left: 500px;
+    opacity: 0;
+    visibility: hidden;
+    width: 40px;
+    height: 40px;
+    animation-name: falling1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+}
+
+@keyframes falling1 {
+    from{
+        opacity: 0;
+        visibility: hidden;
+        top: -600px;
+        left: 500px;
+    }
+
+    to{
+        opacity: 1;
+        visibility: visible;
+        top: -150px;
+        left: 300px;
+    }
+}
+
+
+.first_word{
+    transform: rotate(50deg);
+    position: absolute;
+    left: -500px;
+    top: -50px;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: inplace;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+}
+
+@keyframes inplace{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(50deg);
+        left: -500px;
+        top: -50px;
+    }
+
+    to{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(0);
+        left: 100px;
+        top: -40px;
+    }
+}
+
+
+.second_word{
+    transform: rotate(-50deg);
+    position: absolute;
+    right: -500px;
+    top: -150px;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: inplace2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+}
+
+
+@keyframes inplace2{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(-50deg);
+        right: -500px;
+        top: -150px;
+    }
+
+    to{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(0);
+        right: 100px;
+        top: -40px;
+    }
+}
+
+
+.p1{
+    position: absolute;
+    bottom: -200px;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: rise ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: .6s;
+    animation-timing-function: ease;
+}
+
+
+@keyframes rise{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        bottom: -200px;
+    }
+
+    to{
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+    }
+}
+
+
+.button2{
+    position: absolute;
+    bottom: -400px;
+    left: 350px;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: rise2 ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1.3s;
+    animation-timing-function: ease;
+
+}
+
+
+@keyframes rise2{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        bottom: -400px;
+    }
+
+    to{
+        opacity: 1;
+        visibility: visible;
+        bottom: -50px;
+    }
+}
+
+
+.button1{
+    position: absolute;
+    bottom: -400px;
+    left: 250px;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: rise3 ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: .9s;
+    animation-timing-function: ease;
+
+}
+
+
+@keyframes rise3{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        bottom: -400px;
+    }
+
+    to{
+        opacity: 1;
+        visibility: visible;
+        bottom: -50px;
+    }
+}
+
+
+.about_us{
+    width: 100%;
+    background-image: url(/GemLayout1/assets/asset43.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+
+}
+
+
+
+
+.aboutus_info{
+    padding-top: 140px;
+    display: flex;
+    align-content: center;
+    flex-flow: column nowrap;
+    opacity: 0;
+    transform: translate(0px, -50px)
+}
+
+
+.aboutus_info_active{
+    transition: .4s ease-in-out;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    
+}
+
+
+.aboutus_info a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.aboutus_info h3{
+    font-size: 50px;
+    color: black;
+    font-weight: 300;
+}
+
+.aboutus_info p{
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(177, 177, 177);
+}
+
+.aboutus_line{
+    width: 160px;
+    height: 2px;;
+    background-color: aqua;
+    margin-bottom: 20px;
+
+}
+
+.aboutus_button{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.aboutus_button span{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: aqua;
+    font-weight: 300;
+    padding: 15px 40px 15px 40px;
+    border: 1px solid aqua;
+    border-radius: 1px;
+}
+
+
+.chose_us{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(243, 245, 245);
+}
+
+.choseus_title{
+    font-size: 55px;
+    color: rgb(54, 52, 52);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.choseus_title span{
+    font-weight: 300;
+}
+
+.card_row{
+    margin-top: 100px;
+}
+
+.card_row2{
+    margin-top: 100px;
+}
+
+.card_parent{
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.card_parent_active{
+    opacity: 1;
+}
+
+.bulk{
+    width: 100%;
+    height: 1000px;
+}
