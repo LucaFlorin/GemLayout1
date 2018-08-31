@@ -32,11 +32,11 @@ $(document).ready(function(){
 
 $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
-    if(wScroll > $('.about_us').offset().top){
+    if(wScroll > $('.about_us').offset().top ){
         $('.aboutus_info').addClass('aboutus_info_active');
     }
 
-    if(wScroll > $('.chose_us').offset().top){
+    if(wScroll > $('.chose_us').offset().top - 500){
         $('.card_parent').each(function(i){
             setTimeout(function(){
                 $('.card_parent').eq(i).addClass('card_parent_active');
@@ -45,8 +45,12 @@ $(window).scroll(function(){
         });
     }
 
-    if(wScroll > $('.chose_us').offset().top){
+    if(wScroll > $('.chose_us').offset().top - 500){
         $('.choseus_title').addClass('choseus_title_active');
+    }
+
+    if(wScroll > $('.portfolio').offset().top - 500 ){
+        $('.portfolio_title').addClass('portfolio_title_active');
     }
         
 });

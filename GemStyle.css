@@ -747,3 +747,81 @@ a{
     background-color: rgb(60, 57, 80);
 
 }
+
+
+.portfolio{
+    padding-top: 50px;
+    width: 100%;
+    position: relative;
+    background-image: url(/GemLayout1/assets/asset44.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio_title{
+    transform: translate(0px, -25px);
+    font-family: 'Montserrat', sans-serif;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.portfolio_title_active{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+}
+
+.p_title1{
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.p_title1 span{
+    font-weight: 200;
+}
+
+.p_title2{
+    font-size: 16px;
+    color: #728998;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 50px;
+}
+
+.box1{
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.box1 img{
+    transition: .3s ease-in-out;
+}
+
+.box1 img:hover{
+    transform:translate(-30px, 0);
+
+}
+
+
+.box2{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+
+.box1 img{
+    transition: .3s ease-in-out;
+}
+
+.box1 img:hover{
+    transform:translate(-30px, 0);
+
+}
