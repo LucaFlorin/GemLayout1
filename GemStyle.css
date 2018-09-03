@@ -43,6 +43,7 @@ a{
 
 
 .header_active{
+    opacity: .8;
     position: fixed;
     z-index: 2;
     width: 100%;
@@ -757,6 +758,7 @@ a{
 
 .portfolio{
     padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
     position: relative;
     background-image: url(/GemLayout1/assets/asset44.jpeg);
@@ -1243,3 +1245,394 @@ a{
 .load_hidden{
     display: none;
 }
+
+
+.org_team{
+    width: 100%;
+    background-color: #2C2E3D;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.org_parent{
+    font-family: 'Montserrat', sans-serif;
+    flex-flow: column nowrap;
+    align-content: center;
+}
+
+.org_title1{
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+    color: #fdcd4d;
+}
+
+.org_title2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #00bcd4;
+}
+
+
+.org_title3{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: white;
+}
+
+
+.org_parent2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.org_text{
+    color: #99a9b5;    
+    font-size: 16px;
+}
+
+
+.row_small{
+    margin-top: 100px;    
+}
+
+
+.team_card_small{
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.team_card_small_active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.team_member_primary{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #393D50;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+.member_head{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 230px;
+    height: 230px;
+}
+
+.member_head img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.member_name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.member_ocupation{
+    color: #99a9b5;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 45px;
+}
+
+.member_socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row nowrap;
+    padding-bottom: 45px;
+}
+
+
+
+.m_icon_middle{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.member_icon{
+    width: 40px;
+    height: 40px;
+    background-color: #99a9b5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2C2E3D;
+}
+
+
+.member_icon i{
+    font-size: 18px;
+}
+
+.member_secondary{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.member_icon_small{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.member_icon_small img{
+    transition: .3s ease-in-out;
+    width: 100%;
+   
+}
+
+
+
+.member_name_small{
+    padding-top: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease-in-out;
+}
+
+.member_desc{
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #99a9b5;
+}
+
+
+.team_card_small:hover .member_name_small{
+    color: #fdcd4d;
+}
+
+
+.team_card_small:hover .member_image{
+    transform: scale(1.3);
+}
+
+
+
+.member_icon_smallv2{
+    animation-name: pop2;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: .6s;
+    transform: scale(1);
+}
+
+@keyframes pop2 {
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.08);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.achievments{
+    width: 100%;
+    background-color: #00CEC6;
+}
+
+.inner_achievments{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.counter{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.counter_icon{
+    padding-bottom: 40px;
+}
+
+.counter_icon i{
+    color: white;
+    font-size: 85px;
+}
+
+.counter_number{
+    font-size: 50px;
+    color: #2C2E3D;
+}
+
+.counter_title{
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    color: #728998;
+    font-size: 24px;
+}
+
+
+
+
+.statistics{
+    background-color: #2C2E3D;
+    width: 100%;
+}
+
+
+.statistics_inner{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.stats_title{
+    padding-bottom: 50px;
+}
+
+.stats_title{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stats_title span{
+    color: #fdcd4d;
+}
+
+.stats_text {
+    color: #728998;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.big_letter{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #728998;
+    text-align: center;
+}
+
+.big_letter a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.bar1{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 12px;
+}
+
+.bar_text{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar_name{
+    color: #99a9b5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+}
+
+.bar_number{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.progress{
+    background-color: #3c3950;
+    height: 10px;
+    border-radius: 1px;
+}
+
+.progress-bar{
+    background-color: white;
+    width: 0;
+    transition: 1s ease-in-out;
+}
+
+.progres-bar-active{
+    width: 55%;
+    background-color: white;
+}
+
+.progress_bar2{
+    background-color: #fdcd4d;
+    width: 0;
+    transition: 1.2s ease-in-out;
+}
+
+.progress_bar2_active{
+    width: 82%;
+    background-color: #fdcd4d;
+}
+
+
+.progress_bar3{
+    background-color: gray;
+    width: 0;
+    transition: .9s ease-in-out;
+}
+
+.progress_bar3_active{
+    width: 54%;
+    background-color: gray;
+}
+
+
+.progress_bar4{
+    background-color: aqua;
+    width: 0;
+    transition: .9s ease-in-out;
+}
+
+.progress_bar4_active{
+    width: 54%;
+    background-color: aqua;
+}
+

@@ -52,7 +52,7 @@ $(window).scroll(function(){
         $('.box').each(function(i){
             setTimeout(function(){
                 $('.box').eq(i).addClass('box_active');
-            }, 250 * (i + 1));
+            }, 150 * (i + 1));
         });
 
         
@@ -69,9 +69,46 @@ $(window).scroll(function(){
 
     $('.load_more_btn').click(function(){
         $(this).addClass('load_more_btn_active');
-            $('.loading_animation').fadeIn(100).delay(2000).fadeOut('slow').hide(0);
+            $('.loading_animation').fadeIn(100).delay(2000).fadeOut(30).hide(0);
                 $('.hidden_parent').delay(3000).fadeIn(300);
  
     });
+
+
+    if(wScroll > $('.org_parent').offset().top - 200){
+        $('.team_card_small').each(function(i){
+            setTimeout(function(){
+                $('.team_card_small').eq(i).addClass('team_card_small_active');
+                $('.member_icon_small').eq(i).addClass('member_icon_smallv2');
+            }, 300 * (i + 1));
+        });
+
+        
+    }
+
+
+    $('.counter_number').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+            }, {
+                duration: 1000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            }
+        );
+    });
+
+
+    if(wScroll > $('.stats_title').offset().top - 500 ){
+        $('.progress-bar').addClass('progres-bar-active');
+        $('.progress_bar2').addClass('progress_bar2_active');
+        $('.progress_bar3').addClass('progress_bar3_active');
+        $('.progress_bar4').addClass('progress_bar4_active');
+    }
+
+
+
         
 });
