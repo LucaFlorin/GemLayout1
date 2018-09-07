@@ -1902,7 +1902,6 @@ a{
     grid-template-columns: repeat(4, 2fr);
     grid-auto-rows: minmax(300px, auto);
     grid-gap: 40px;
-    grid-template-areas: 
 }
 
 .news_card_parent{
@@ -2243,4 +2242,93 @@ a{
 
 .contact_button:hover span{
     color: white;
+}
+
+.demo{
+    background-image: url(/GemLayout1/assets/asset49.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.demo_inner{
+    width: 38%;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.demo_icon i{
+    font-size: 80px;
+    color: aqua;
+
+}
+
+.demo_text{
+    padding-top: 40px;
+    color: white;
+    font-weight: 300;
+    font-size: 23px;
+}
+
+.demo_button{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    
+}
+
+.demo_button1{
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 140);
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 140);
+    margin-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+
+.demo_button2{
+    border-radius: 20px;
+    color: aqua;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    border: 1px solid aqua;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.demo_button1:hover{
+    background-color: rgba(255, 255, 140, 0.265);
+}
+
+.demo_button2:hover{
+    background-color: rgba(7, 241, 253, 0.265);
+}
+
+
+.footer1{
+    height: 120vh;
+    background-color: #212331;
+}
+
+.footer1_inner{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    grid-auto-rows: minmax(220px, auto);
 }
