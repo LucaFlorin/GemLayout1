@@ -834,7 +834,7 @@ a{
 }
 
 .box1{
-    width: 600px;
+    width: 612px;
     overflow: hidden;
 
 }
@@ -851,20 +851,24 @@ a{
     overflow: hidden;
 }
 
+.box2_width{
+    width: 320px;
+}
+
 .box2 img{
     width: 350px;
 }
 
 
 .box3{
-    width: 585px;
+    width: 605px;
     height: 285px;
     overflow: hidden;
 
 }
 
 .box3 img{
-   width: 620px;
+   width: 640px;
 }
 
 .box4{
@@ -874,6 +878,10 @@ a{
 
 .box4 img{
     width: 330px;
+}
+
+.box4_width{
+    width: 320px;
 }
 
 .box_overlay{
