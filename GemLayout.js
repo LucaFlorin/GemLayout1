@@ -86,7 +86,7 @@ $(document).ready(function(){
             
         }
 
-        if(wScroll > $('.stats_title').offset().top - 500 ){
+        if(wScroll > $('.stats_title').offset().top - 300 ){
             $('.progress-bar').addClass('progres-bar-active');
             $('.progress_bar2').addClass('progress_bar2_active');
             $('.progress_bar3').addClass('progress_bar3_active');
@@ -95,7 +95,7 @@ $(document).ready(function(){
 
 
 
-        if(wScroll > $('.stats_bars').offset().top - 700 ){
+        if(wScroll > $('.achievments').offset().top - 300 ){
              if(scr == false){
                 $('.counter_number').each(function () {
                     $(this).prop('Counter',0).animate({
@@ -110,26 +110,28 @@ $(document).ready(function(){
                     );
                 });
             }
+
+            scr = true;
         
         }
 
         
-    if(wScroll > $('.stats_bars').offset().top - 700 ){
-        if(scr == false){
-            $('.number').each(function () {
-                $(this).prop('Counter',0).animate({
-                    Counter: $(this).text()
-                    }, {
-                        duration: 1000,
-                        easing: 'swing',
-                        step: function (now) {
-                            $(this).text(Math.ceil(now));
+        if(wScroll > $('.stats_bars').offset().top - 300 ){
+            if(scr == false){
+                $('.number').each(function () {
+                    $(this).prop('Counter',0).animate({
+                        Counter: $(this).text()
+                        }, {
+                            duration: 1000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
+                            }
                         }
-                    }
-                );
-            });
-            scr = true;
-        }
+                    );
+                });
+                scr = true;
+            }
         
     }
     
